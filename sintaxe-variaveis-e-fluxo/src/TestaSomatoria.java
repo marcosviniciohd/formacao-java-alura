@@ -7,14 +7,11 @@ public class TestaSomatoria {
 		int total = 0;
 		
 		while(contador <= 10) {
-			
 			total += contador;
-			
-			System.out.println(total);
-			
 			contador++;
-		}
+		} 
 		
+		System.out.println(total);
 	}
 
 }

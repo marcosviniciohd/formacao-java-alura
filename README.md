@@ -1,2 +1,1 @@
-# formacao-java-alura
-Formação Java Alura
+# Trilha de Formação Java - Alura
