@@ -21,3 +21,19 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/.metadata
+
+# Sintaxe Básica do Java
+/sintaxe.basica-java/.settings
+/sintaxe.basica-java/bin
+/sintaxe.basica-java/.classpath
+/sintaxe.basica-java/.project
+
+# Sintaxe variáveis e fluxo
+/sintaxe-variaveis-e-fluxo/.settings
+/sintaxe-variaveis-e-fluxo/bin
+/sintaxe-variaveis-e-fluxo.classpath
+/sintaxe-variaveis-e-fluxo/.project
+
+
