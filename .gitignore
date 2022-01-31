@@ -36,4 +36,11 @@ hs_err_pid*
 /sintaxe-variaveis-e-fluxo/.classpath
 /sintaxe-variaveis-e-fluxo/.project
 
+#Projeto byte-bank
+/byte-bank/.settings
+/byte-bank/bin
+/byte-bank/.classpath
+/byte-bank/.project
+byte-bank
+
 
