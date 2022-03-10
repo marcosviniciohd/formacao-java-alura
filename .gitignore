@@ -42,4 +42,10 @@ hs_err_pid*
 /byte-bank/.classpath
 /byte-bank/.project
 
+#Projeto byte-bank composto
+/byte-bank-composto/.settings
+/byte-bank-composto/bin
+/byte-bank-composto/.classpath
+/byte-bank-composto/.project
+
 
