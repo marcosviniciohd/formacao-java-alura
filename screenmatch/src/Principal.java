@@ -1,3 +1,4 @@
+import calculo.CalculadoraDeTempo;
 import calculo.FiltroRecomentacao;
 import modelos.Epsodio;
 import modelos.Filme;
@@ -18,6 +19,7 @@ public class Principal {
         FiltroRecomentacao filtro = new FiltroRecomentacao();
         filtro.filtra(meuFilme);
 
+
         Serie serie = new Serie();
         serie.setNome("Game of Thrones");
         serie.setAnoDeLancamento(2011);
@@ -26,6 +28,15 @@ public class Principal {
         serie.avalia(9.5);
         serie.avalia(9.0);
         System.out.println("Média: " + serie.pegaMedia());
+        serie.setTemporadas(10);
+        serie.setEpisodiosPorTemporada(10);
+        serie.setMinutosPorEpisodio(50);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(serie);
+        System.out.println(calculadora.getTempoTotal());
+
 
 
         Epsodio epsodio = new Epsodio();
