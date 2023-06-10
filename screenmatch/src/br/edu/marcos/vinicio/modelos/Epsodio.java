@@ -1,6 +1,6 @@
-package modelos;
+package br.edu.marcos.vinicio.modelos;
 
-import calculo.Classificavel;
+import br.edu.marcos.vinicio.calculo.Classificavel;
 
 public class Epsodio implements Classificavel {
     private int numero;

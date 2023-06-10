@@ -1,7 +1,6 @@
-package calculo;
+package br.edu.marcos.vinicio.calculo;
 
-import modelos.Filme;
-import modelos.Titulo;
+import br.edu.marcos.vinicio.modelos.Titulo;
 
 public class CalculadoraDeTempo {
     private int tempoTotal;

@@ -1,4 +1,4 @@
-package modelos;
+package br.edu.marcos.vinicio.modelos;
 
 public class Titulo {
     private String nome;

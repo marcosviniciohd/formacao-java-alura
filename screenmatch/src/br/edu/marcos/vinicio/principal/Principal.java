@@ -1,8 +1,12 @@
-import calculo.CalculadoraDeTempo;
-import calculo.FiltroRecomentacao;
-import modelos.Epsodio;
-import modelos.Filme;
-import modelos.Serie;
+package br.edu.marcos.vinicio.principal;
+
+import br.edu.marcos.vinicio.calculo.CalculadoraDeTempo;
+import br.edu.marcos.vinicio.calculo.FiltroRecomentacao;
+import br.edu.marcos.vinicio.modelos.Epsodio;
+import br.edu.marcos.vinicio.modelos.Filme;
+import br.edu.marcos.vinicio.modelos.Serie;
+
+import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
@@ -47,6 +51,28 @@ public class Principal {
         System.out.println("Série: " + epsodio.getSerie().getNome());
         epsodio.setTotalDeAvaliacoes(300);
         filtro.filtra(epsodio);
+
+        var filmeDoPaulo = new Filme();
+        filmeDoPaulo.setNome("Mario Bros");
+        filmeDoPaulo.setDuracaoEmMinutos(200);
+        filmeDoPaulo.setAnoDeLancamento(2023);
+        filmeDoPaulo.avalia(10.0);
+
+        var outroFilme = new Filme();
+        outroFilme.setNome("As traças da Vovó careca");
+        outroFilme.setDuracaoEmMinutos(150);
+        outroFilme.setAnoDeLancamento(2023);
+        outroFilme.avalia(10.0);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(filmeDoPaulo);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println("------------------------------------------------------------------------------");
+        System.out.println(listaDeFilmes);
+
 
     }
 }

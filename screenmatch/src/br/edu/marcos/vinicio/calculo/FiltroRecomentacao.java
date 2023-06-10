@@ -1,4 +1,4 @@
-package calculo;
+package br.edu.marcos.vinicio.calculo;
 
 public class FiltroRecomentacao {
         public void filtra(Classificavel classificavel) {
