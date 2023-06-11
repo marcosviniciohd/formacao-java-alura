@@ -10,11 +10,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O Poderoso Chefão");
-        meuFilme.setAnoDeLancamento(1972);
-        meuFilme.setDuracaoEmMinutos(180);
-        meuFilme.setDiretor("Francis Ford Coppola");
+        Filme meuFilme = new Filme("O Poderoso Chefão", 1972, 175, "Francis Ford Coppola");
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8.5);
         meuFilme.avalia(9.0);
@@ -24,9 +20,7 @@ public class Principal {
         filtro.filtra(meuFilme);
 
 
-        Serie serie = new Serie();
-        serie.setNome("Game of Thrones");
-        serie.setAnoDeLancamento(2011);
+        Serie serie = new Serie("Game of Thrones", 2011);
         serie.setDuracaoEmMinutos(60);
         serie.exibeFichaTecnica();
         serie.avalia(9.5);
@@ -52,16 +46,10 @@ public class Principal {
         epsodio.setTotalDeAvaliacoes(300);
         filtro.filtra(epsodio);
 
-        var filmeDoPaulo = new Filme();
-        filmeDoPaulo.setNome("Mario Bros");
-        filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.setAnoDeLancamento(2023);
+        var filmeDoPaulo = new Filme("Mario Bros", 2023, 200, "Paulo");
         filmeDoPaulo.avalia(10.0);
 
-        var outroFilme = new Filme();
-        outroFilme.setNome("As traças da Vovó careca");
-        outroFilme.setDuracaoEmMinutos(150);
-        outroFilme.setAnoDeLancamento(2023);
+        var outroFilme = new Filme("As traças da Vovó careca", 2023, 200, "Paulo");
         outroFilme.avalia(10.0);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
@@ -73,6 +61,8 @@ public class Principal {
         System.out.println("------------------------------------------------------------------------------");
         System.out.println(listaDeFilmes);
 
-
+        System.out.println("------------------------------------------------------------------------------");
+        var novoFilme = new Filme("Meu filme", 2021, 120, "Eu");
+        System.out.println(novoFilme);
     }
 }
